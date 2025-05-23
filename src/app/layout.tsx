@@ -21,7 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${roboto.className} antialiased`}>
+      <body className={`${roboto.className} antialiased bg-gradient-to-b from-[#FFFFFF] to-[#FFD1D0]`}>
         <Toaster position="bottom-right" richColors />
         <ReduxProvider>{children}</ReduxProvider>
       </body>

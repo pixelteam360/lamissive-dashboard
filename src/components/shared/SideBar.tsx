@@ -10,7 +10,7 @@ import {
   SidebarMenuButton,
   SidebarMenuItem,
 } from "@/components/ui/sidebar";
-import logo from "../../assets/iamges/logo.png";
+import logo from "../../assets/placeholders/image_placeholder.png";
 import {
   SquareUser,
   UserRoundX,
@@ -70,7 +70,7 @@ const SideBar = () => {
   };
   return (
     <Sidebar>
-      <SidebarContent className="!bg-[#1C1C1C] text-white">
+      <SidebarContent className="!bg-primary text-white">
         <SidebarGroup />
         <SidebarGroupLabel className="mb-14 mt-8 mx-auto">
           <Image src={logo} alt="logo" width={190} height={50} />
@@ -83,7 +83,7 @@ const SideBar = () => {
                   asChild
                   className={`text-[15px] font-bold px-4 ${
                     pathName === `${item.url}`
-                      ? "bg-white text-black rounded-lg"
+                      ? "bg-white text-primary rounded-lg"
                       : "text-white"
                   }`}
                 >
@@ -99,7 +99,7 @@ const SideBar = () => {
         <SidebarGroup />
 
       </SidebarContent>
-      <SidebarFooter className="!bg-[#1C1C1C] text-white">
+      <SidebarFooter className="!bg-primary text-white">
           <button
             onClick={handleLolgout}
             className="py-3 border border-red-400 rounded-lg font-medium text-base"
