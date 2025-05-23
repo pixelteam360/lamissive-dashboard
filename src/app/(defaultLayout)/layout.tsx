@@ -11,7 +11,7 @@ const CommonLayout = ({ children }: { children: React.ReactNode }) => {
   return (
     <SidebarProvider>
       <SideBar />
-      <main className="md:p-20 p-5">
+      <main className="w-full md:p-20 p-5">
         <SidebarTrigger />
         <div>
           {children}

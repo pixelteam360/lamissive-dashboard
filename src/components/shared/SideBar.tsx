@@ -13,11 +13,11 @@ import {
 import logo from "../../assets/placeholders/image_placeholder.png";
 import {
   SquareUser,
-  UserRoundX,
   Settings,
   ClipboardMinus,
   LayoutDashboardIcon,
   Contact,
+  CircleDollarSign,
 } from "lucide-react";
 import Image from "next/image";
 import { usePathname, useRouter } from "next/navigation";
@@ -32,24 +32,24 @@ const items = [
     icon: LayoutDashboardIcon,
   },
   {
-    title: "Report",
-    url: "/report",
+    title: "Projects List",
+    url: "/projects-list",
     icon: ClipboardMinus,
   },
   {
-    title: "Profile",
-    url: "/profile",
+    title: "Jobs List",
+    url: "/jobs-list",
     icon: Contact,
   },
   {
-    title: "User",
-    url: "/user",
+    title: "User List",
+    url: "/user-list",
     icon: SquareUser,
   },
   {
-    title: "Remove",
-    url: "/remove",
-    icon: UserRoundX,
+    title: "Subscription",
+    url: "/subscription",
+    icon: CircleDollarSign,
   },
   {
     title: "Setting",
@@ -72,7 +72,7 @@ const SideBar = () => {
     <Sidebar>
       <SidebarContent className="!bg-primary text-white">
         <SidebarGroup />
-        <SidebarGroupLabel className="mb-14 mt-8 mx-auto">
+        <SidebarGroupLabel className="mb-24 mt-8 mx-auto">
           <Image src={logo} alt="logo" width={190} height={50} />
         </SidebarGroupLabel>
         <SidebarGroupContent>
@@ -81,7 +81,7 @@ const SideBar = () => {
               <SidebarMenuItem key={item.title}>
                 <SidebarMenuButton
                   asChild
-                  className={`text-[15px] font-bold px-4 ${
+                  className={`text-[15px] font-bold px-4 py-6 ${
                     pathName === `${item.url}`
                       ? "bg-white text-primary rounded-lg"
                       : "text-white"
@@ -97,16 +97,15 @@ const SideBar = () => {
           </SidebarMenu>
         </SidebarGroupContent>
         <SidebarGroup />
-
       </SidebarContent>
       <SidebarFooter className="!bg-primary text-white">
-          <button
-            onClick={handleLolgout}
-            className="py-3 border border-red-400 rounded-lg font-medium text-base"
-          >
-            Log out
-          </button>
-        </SidebarFooter>
+        <button
+          onClick={handleLolgout}
+          className="py-3 border border-red-400 rounded-lg font-medium text-base"
+        >
+          Log out
+        </button>
+      </SidebarFooter>
     </Sidebar>
   );
 };

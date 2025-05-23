@@ -21,6 +21,7 @@ export default {
   				DEFAULT: 'hsl(var(--secondary))',
   				foreground: 'hsl(var(--secondary-foreground))'
   			},
+			grayText: "#7E7D7C",
   			success: '#102F22',
   			info: '#D9F4F9',
   			warning: '#FAE4D0',
