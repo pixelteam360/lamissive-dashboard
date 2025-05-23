@@ -10,7 +10,7 @@ import {
   SidebarMenuButton,
   SidebarMenuItem,
 } from "@/components/ui/sidebar";
-import logo from "../../assets/placeholders/image_placeholder.png";
+import logo from "../../assets/images/logo.png";
 import {
   SquareUser,
   Settings,
@@ -72,8 +72,8 @@ const SideBar = () => {
     <Sidebar>
       <SidebarContent className="!bg-primary text-white">
         <SidebarGroup />
-        <SidebarGroupLabel className="mb-24 mt-8 mx-auto">
-          <Image src={logo} alt="logo" width={190} height={50} />
+        <SidebarGroupLabel className="mb-20 mt-8 mx-auto">
+          <Image src={logo} alt="logo" width={500} height={600} className="w-32" />
         </SidebarGroupLabel>
         <SidebarGroupContent>
           <SidebarMenu className="px-4 space-y-3">

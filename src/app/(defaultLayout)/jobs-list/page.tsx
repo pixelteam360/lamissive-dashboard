@@ -1,5 +1,5 @@
 
-import JobslistsListTab from "@/components/modules/Jobslist/JobslistsListTab";
+import JobslistsListTab from "@/components/modules/Jobslist/JobListTab";
 import PageHeader from "@/components/shared/PageHeader";
 
 

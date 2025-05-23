@@ -4,25 +4,25 @@ import JobslistCard from "./JobslistCard";
 const JobslistsListTab = () => {
   return (
     <div>
-      <Tabs defaultValue="myProfile" className="w-full">
+      <Tabs defaultValue="Recent Job" className="w-full">
         <TabsList className="bg-transparent md:mb-8 mb-4 md:gap-5 gap-2">
           <TabsTrigger
-            value="myProfile"
+            value="Recent Job"
             className="data-[state=active]:bg-transparent  data-[state=active]:border-b-[2px] data-[state=active]:border-primary data-[state=active]:shadow-none data-[state=active]:rounded-none"
           >
             Recent Job
           </TabsTrigger>
           <TabsTrigger
-            value="password"
+            value="All Jobs"
             className="data-[state=active]:bg-transparent data-[state=active]:border-b-[2px] data-[state=active]:border-primary data-[state=active]:shadow-none data-[state=active]:rounded-none"
           >
             All Jobs
           </TabsTrigger>
         </TabsList>
-        <TabsContent value="myProfile">
+        <TabsContent value="Recent Job">
           <JobslistCard />
         </TabsContent>
-        <TabsContent value="password">
+        <TabsContent value="All Jobs">
           <JobslistCard />
         </TabsContent>
       </Tabs>
