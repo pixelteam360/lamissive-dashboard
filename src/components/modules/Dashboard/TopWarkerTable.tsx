@@ -9,9 +9,6 @@ import {
 } from "@/components/ui/dropdown-menu";
 import Image from "next/image";
 import { MoreVertical } from "lucide-react";
-import { useProfilesQuery } from "@/redux/features/profile/profile.api";
-import Spinner from "@/components/common/Spinner";
-import DeleteModal from "@/components/common/DeleteModal";
 
 
 
